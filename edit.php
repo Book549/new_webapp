@@ -43,46 +43,46 @@ session_start();
 	switch ($_SESSION['user_type']) {
 		case '1':
 			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-	<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-	<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-	<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
-	<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-	<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-	<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-	<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-	<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-	<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-	<input type=\"submit\" name=\"send\">
-</form>");
+				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
+				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
+				<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
+				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
+				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
+				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
+				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
+				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
+				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
+				<input type=\"submit\" name=\"send\">
+			</form>");
 			break;
 		case '2':
 			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-	<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-	<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-	<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
-	<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-	<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-	<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-	<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-	<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-	<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-	<input type=\"submit\" name=\"send\">
-</form>");
+				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
+				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
+				<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
+				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
+				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
+				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
+				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
+				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
+				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
+				<input type=\"submit\" name=\"send\">
+			</form>");
 			break;
 		case '3':
 			if ($_GET['type'] == "problem") {
 			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-	<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-	<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-	<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
-	<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-	<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-	<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-	<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-	<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-	<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-	<input type=\"submit\" name=\"send\">
-</form>");
+				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
+				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
+				<input type=\"file\" name=\"prob_pic\" value=\"$prob_pic\">
+				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
+				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
+				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
+				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
+				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
+				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
+				<input type=\"submit\" name=\"send\">
+			</form>");
 		}elseif ($_GET['type'] == "user") {
 			echo "<form method=\"post\" enctype=\"multipart/form-data\">
 				<input type=\"text\" name=\"user_user\" value=\"$user_user\">
