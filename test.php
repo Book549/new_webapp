@@ -4,17 +4,15 @@
 	<title></title>
 </head>
 <body>
-<form method="post" enctype="multipart/form-data">
-	<input type="date" name="prob_date">
-	<input type="time" name="prob_time">
-	<input type="file" name="prob_pic">
-	<input type="text" name="prob_dis">
-	<input type="text" name="prob_event">
-	<input type="text" name="prob_resu">
-	<input type="text" name="prob_repo_user_id">
-	<input type="date" name="prob_repo_date">
-	<input type="text" name="prob_repo_advice">
+<form method="get" enctype="multipart/form-data">
+	<input type="text" name="user_user">
+	<input type="text" name="user_name">
+	<input type="text" name="user_sirname">
+	<input type="text" name="user_pass">
+	<input type="text" name="user_tel">
+	<input type="text" name="user_type">
 	<input type="submit" name="send">
 </form>
 </body>
 </html>
+UPDATE `user` SET `user_user` = '', `user_name` = '', `user_sirname` = '', `user_pass` = '', `user_tel` = '', `user_type` = '' WHERE `user`.`user_id` = 6;
