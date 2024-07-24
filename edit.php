@@ -42,74 +42,77 @@ session_start();
 
 	switch ($_SESSION['user_type']) {
 		case '1':
-			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-				<input type=\"file\" name=\"prob_pic\" onchange=\"preview()\">
-				<img id=\"prepic\" width=\"auto\" height=\"100px\">
-				<script type=\"text/javascript\">
+			echo("<form method=post enctype=multipart/form-data>
+				
+				<input type=date name=prob_date value=$prob_date>
+				<input type=time name=prob_time value=$prob_time>
+				<input type=file name=prob_pic onchange=preview()>
+				<img id=prepic width=auto height=100px>
+				<script type=text/javascript>
 				function preview() {
 					prepic.src=URL.createObjectURL(event.target.files[0]);
 				}
 				</script>
-				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-				<input type=\"submit\" name=\"send\">
+				<input type=text name=prob_dis value=$prob_dis>
+				<input type=text name=prob_event value=$prob_event>
+				<input type=text name=prob_resu value=$prob_resu>
+				<input type=text name=prob_repo_user_id >
+				<input type=date name=prob_repo_date value=$prob_repo_date>
+				<input type=text name=prob_repo_advice value=$prob_repo_advice>
+				<input type=submit name=send>
 			</form>");
 			break;
 		case '2':
-			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-				<input type=\"file\" name=\"prob_pic\" onchange=\"preview()\">
-				<img id=\"prepic\" width=\"auto\" height=\"100px\">
-				<script type=\"text/javascript\">
+			echo("<form method=post enctype=multipart/form-data>
+				
+				<input type=date name=prob_date value=$prob_date>
+				<input type=time name=prob_time value=$prob_time>
+				<input type=file name=prob_pic onchange=preview()>
+				<img id=prepic width=auto height=100px>
+				<script type=text/javascript>
 				function preview() {
 					prepic.src=URL.createObjectURL(event.target.files[0]);
 				}
 				</script>
-				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-				<input type=\"submit\" name=\"send\">
+				<input type=text name=prob_dis value=$prob_dis>
+				<input type=text name=prob_event value=$prob_event>
+				<input type=text name=prob_resu value=$prob_resu>
+				<input type=text name=prob_repo_user_id>
+				<input type=date name=prob_repo_date value=$prob_repo_date>
+				<input type=text name=prob_repo_advice value=$prob_repo_advice>
+				<input type=submit name=send>
 			</form>");
 			break;
 		case '3':
 			if ($_GET['type'] == "problem") {
-			echo("<form method=\"post\" enctype=\"multipart/form-data\">
-				<input type=\"date\" name=\"prob_date\" value=\"$prob_date\">
-				<input type=\"time\" name=\"prob_time\" value=\"$prob_time\">
-				<input type=\"file\" name=\"prob_pic\" onchange=\"preview()\">
-				<img id=\"prepic\" width=\"auto\" height=\"100px\">
-				<script type=\"text/javascript\">
+			echo("<form method=post enctype=multipart/form-data>
+				
+				<input type=date name=prob_date value=$prob_date>
+				<input type=time name=prob_time value=$prob_time>
+				<input type=file name=prob_pic onchange=preview()>
+				<img id=prepic width=auto height=100px>
+				<script type=text/javascript>
 				function preview() {
 					prepic.src=URL.createObjectURL(event.target.files[0]);
 				}
 				</script>
-				<input type=\"text\" name=\"prob_dis\" value=\"$prob_dis\">
-				<input type=\"text\" name=\"prob_event\" value=\"$prob_event\">
-				<input type=\"text\" name=\"prob_resu\" value=\"$prob_resu\">
-				<input type=\"text\" name=\"prob_repo_user_id\" value=\"$prob_repo_user_id\">
-				<input type=\"date\" name=\"prob_repo_date\" value=\"$prob_repo_date\">
-				<input type=\"text\" name=\"prob_repo_advice\" value=\"$prob_repo_advice\">
-				<input type=\"submit\" name=\"send\">
+				<input type=text name=prob_dis value=$prob_dis>
+				<input type=text name=prob_event value=$prob_event>
+				<input type=text name=prob_resu value=$prob_resu>
+				<input type=text name=prob_repo_user_id value=$prob_repo_user_id>
+				<input type=date name=prob_repo_date value=$prob_repo_date>
+				<input type=text name=prob_repo_advice value=$prob_repo_advice>
+				<input type=submit name=send>
 			</form>");
 		}elseif ($_GET['type'] == "user") {
-			echo "<form method=\"post\" enctype=\"multipart/form-data\">
-				<input type=\"text\" name=\"user_user\" value=\"$user_user\">
-				<input type=\"text\" name=\"user_name\" value=\"$user_name\">
-				<input type=\"text\" name=\"user_sirname\" value=\"$user_sirname\">
-				<input type=\"text\" name=\"user_pass\" value=\"$user_pass\">
-				<input type=\"text\" name=\"user_tel\" value=\"$user_tel\">
-				<input type=\"text\" name=\"user_type\" value=\"$user_type\">
-				<input type=\"submit\" name=\"send\">
+			echo "<form method=post enctype=multipart/form-data>
+				<input type=text name=user_user value=$user_user>
+				<input type=text name=user_name value=$user_name>
+				<input type=text name=user_sirname value=$user_sirname>
+				<input type=text name=user_pass value=$user_pass>
+				<input type=text name=user_tel value=$user_tel>
+				<input type=text name=user_type value=$user_type>
+				<input type=submit name=send>
 			</form>";
 		}
 			
@@ -123,7 +126,7 @@ session_start();
 		$prob_date = $_POST['prob_date'];
 		$prob_time = $_POST['prob_time'];
 		//$prob_pic = $_FILE['prob_pic']['name'];
-		//$prob_id_user = $_POST['prob_id_user'];
+		$prob_id_user = $_SESSION['user_id'];
 		$prob_dis = $_POST['prob_dis'];
 		$prob_event = $_POST['prob_event'];
 		$prob_resu = $_POST['prob_resu'];

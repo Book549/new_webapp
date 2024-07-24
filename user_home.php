@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>user</h1>
-	<a href="add.php&type=problem">add</a>
+	<a href="add.php?type=problem">add</a>
 	<a href="logout.php">logout</a>
 	<table border="5px">
 	<tr>
@@ -46,8 +46,8 @@
 		echo "<td>".$row['prob_repo_user_id']."</td>" ;
 		echo "<td>".$row['prob_repo_date']."</td>" ;
 		echo "<td>".$row['prob_repo_advice']."</td>" ;
-		echo "<td><a href=\"edit.php?id=". $row['prob_id'] ."\",type=\"problem\">edit</a></td>" ;
-		echo "<td>del</td></tr>" ;
+		echo "<td><a href=\"edit.php?id=". $row['prob_id'] ."&type=problem\">edit</a></td>" ;
+		echo "<td><a href=\"del.php?id=". $row['prob_id'] ."&type=problem\">del</td></tr>" ;
 
 		
 		}
